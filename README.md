@@ -15,7 +15,7 @@ courant du statuts de la liaison. DTP a besoin que les deux switches soient dans
 | Mode | Description |
 | --- | --- |
 | dynamic desirable |  Dans ce mode, le port est en mode `access` mais il écoute et envoi des annonces DTP afin d'établir un Dynamic Trunk. Si la négociation réussie avec un port voisin en Trunk ou Auto, le port devient trunk. |
-| dynamic auto | L'interface DTP `dynamic auto` n'écoutera passivement que les messages DTP provenant de l'interface de l'autre commutateur. Si l'interface `dynamic auto` DTP reçoit un message DTP de l'interface de l'autre commutateur, une liaison trunk sera formée. |
+| dynamic auto | L'interface DTP `dynamic auto` écoutera passivement que les messages DTP provenant de l'interface de l'autre commutateur et enverra des messages DTP. Si l'interface `dynamic auto` DTP reçoit un message DTP de l'interface de l'autre commutateur, une liaison trunk sera formée. |
 | trunk | Ce mode place de manière statique le port dans un trunk et annonce des paquets  DTP au voisin afin d'établir une liaison trunk dynamique. |
 | nonegotiate | Le mode `nonegotiate` désactive l'envoi de paquets DTP à partir d'une interface. Le mode `nonegotiate` n'est possible que lorsque le mode de port de commutation de l'interface est « access » ou « trunk ». |
 | access | Une interface de commutateur configurée en mode `access` convertit l'interface du commutateur en mode `access`. Le mode "access" empêche l'utilisation du DTP et fait du port un port d'accès pur. |
